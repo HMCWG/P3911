@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IEEE P3911 — Performance</title>
+<meta name="description" content="Interactive rate-distortion curves for every i3DV reference-software version of IEEE P3911, six common test sequences and the test conditions behind each point.">
+<meta property="og:title" content="IEEE P3911 — Performance">
+<meta property="og:description" content="Interactive rate-distortion curves for six test sequences and nine i3DV reference-software versions of IEEE P3911.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b4d8f'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='20' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EP3911%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css?v=20261106b">
+</head>
+<body data-page="performance">
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" title="IEEE P3911 — Standard for Holographic Video Coding" aria-label="IEEE P3911 home">
+      <span class="brand-mark" aria-hidden="true">P3911</span>
+      <span class="brand-text"><span class="brand-short">P3911</span><span class="brand-full">IEEE Standard for Holographic Video Coding</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" data-nav="home">Home</a>
+      <a href="timeline.html" data-nav="timeline">Timeline</a>
+      <a href="tech.html" data-nav="tech">Technology</a>
+      <a href="performance.html" data-nav="performance">Performance</a>
+      <a href="outcomes.html" data-nav="outcomes">Outcomes</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle light and dark theme" title="Toggle light and dark theme">◐</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="crumbs"><a href="index.html">Home</a> / Performance</div>
+      <h1>Performance</h1>
+      <p class="lead">RD curves for six common test sequences and nine i3DV reference-software versions of IEEE P3911. Click a legend entry to toggle a version and hover a point for exact rate and PSNR values. Versions are compared on the curves themselves.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="section-kicker">01 — Rate–distortion curves</p>
+        <h2>Choose a sequence</h2>
+        <p class="section-sub">All nine versions are shown by default for every sequence. Two of them reuse the measured points of another version and are drawn dashed with open rings so the original curve stays readable.</p>
+        <div class="seg-tabs" id="seq-tabs" role="group" aria-label="Test sequence"></div>
+      </div>
+      <div id="rd-chart" class="chart-host reveal" role="img" aria-label="Rate–distortion curves for the selected i3DV test sequence"></div>
+      <p class="chart-note" id="rd-caption"></p>
+      <p class="chart-note">The horizontal axis is the coded representation size expressed as rate; the vertical axis is PSNR. Test rate points differ across versions, so compare versions by the overall trend of the curves rather than by single points. 2.1 reuses the 2.0 results, and for VRU_gz, VRU_dg4, Show_Groups_4K and cook_spinach the 8.0 results reuse 7.0.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="section-kicker">02 — Test conditions</p>
+        <h2>Data and conditions</h2>
+        <ul class="fact-list">
+          <li><span class="fact-label">Source</span><span>N0004, Common Test Conditions 4.0 for intelligent 3D holographic video coding (working-group output document, January 2026)</span></li>
+        </ul>
+      </div>
+      <div class="table-wrap ct-wrap reveal">
+        <table class="ct-table">
+          <thead>
+            <tr>
+              <th>Sequence</th>
+              <th>Resolution</th>
+              <th>Frame rate</th>
+              <th>Frames</th>
+              <th>Views / test views</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>VRU_gz</td><td>1920×1080</td><td>25 fps</td><td>250</td><td>34 / 0, 10, 20, 30</td>
+            </tr>
+            <tr>
+              <td>VRU_dg4</td><td>1920×1080</td><td>25 fps</td><td>250</td><td>34 / 0, 10, 20, 30</td>
+            </tr>
+            <tr>
+              <td>Dance_Dunhuang_Pair_1080</td><td>1920×1080</td><td>25 fps</td><td>250</td><td>60 / 0, 10, 20, 30, 40, 50</td>
+            </tr>
+            <tr>
+              <td>Show_Groups_4K</td><td>3840×2160</td><td>25 fps</td><td>250</td><td>56 / 0, 10, 20, 30, 40, 50</td>
+            </tr>
+            <tr>
+              <td>migu_full_basketball_360</td><td>3840×2160</td><td>25 fps</td><td>250</td><td>36 / 0, 10, 20, 30</td>
+            </tr>
+            <tr>
+              <td>cook_spinach</td><td>2704×2028</td><td>30 fps</td><td>300</td><td>21 / 0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <div class="footer-title">IEEE P3911 — Standard for Holographic Video Coding</div>
+    </div>
+    <div class="footer-links">
+      <a href="timeline.html">Timeline</a>
+      <a href="tech.html">Technology</a>
+      <a href="performance.html">Performance</a>
+      <a href="outcomes.html">Outcomes</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/data.js?v=20261106b"></script>
+<script src="assets/charts.js?v=20261106b"></script>
+<script src="assets/app.js?v=20261106b"></script>
+</body>
+</html>
